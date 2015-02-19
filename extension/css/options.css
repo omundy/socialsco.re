@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+	padding:0;
+	margin:0;
+	font: 0.9em/1.5em "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	color:#222;
+	background:#fff;	
+}
+h1, h2, h3, h4, h5, h6 { 
+	font-weight:normal; 
+	background-color:transparent; 
+	padding:0; 
+	margin:10px 0 0 0; 
+	clear:both; 
+}
+h1 { font-size:2.3em; line-height:1.6em;  }
+#container {
+	margin:20px;
+}
+#col {
+	width:400px;
+	float:left;
+	margin-right:20px;
+}
+.formGroup {
+	margin:10px 0 0;
+}
+input {
+	background:#ddd;
+	border:none;
+	padding:6px;
+}
+.status {
+	color:#bbb;
+}

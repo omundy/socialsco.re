@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Global
+..................................................................................... 
+html, body { padding:0; margin:0; font: 0.9em/1.5em "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; color:#222 background:#fff; }
+.clear { clear: both; height: 1px; line-height: 1px; }
+.hidden { display:none; height: 1px; line-height: 1px; }
+h1, h2, h3, h4, h5, h6 { font: 1.0em/1.4em "Lucida Grande", Verdana, Arial, sans-serif; font-weight:normal;
+	background-color:transparent; padding-bottom:0; margin-bottom:0; clear:both; }
+h1 { font-size:2.3em; line-height:1.6em; }
+h2 { font-size:1.5em; line-height:1.5em; }
+h3 { font-size:1.3em; line-height:1.3em; }
+h4 { font-size:1.2em; line-height:1.3em; }
+h5 { font-size:1.1em; line-height:1.3em; }
+h6 { font-size:0.9em; line-height:0.7em; }
+
+#container { width:960px; margin:0 auto; }
+
+form { clear:both; margin:20px 0 0 0; border:1px solid #ddd; padding:15px; overflow:auto; }
+form input { background:#ddd; border:none; padding:3px 4px; }
+.formLeftCol { float:left; width:100px; text-align:right; clear:both; }
+.formRightCol { float:left; width:140px; text-align:right; }
+.code { font:"Courier New", Courier, monospace; background:#ddd; padding:2px 3px}
+
+
+
+*/

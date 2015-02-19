@@ -1,0 +1,188 @@
+
+#SocialScoreContainer { 
+	font-face:sans-serif; font-size:100%; color:#eee; 
+	position:fixed;
+	top:0px;
+	z-index:299;
+	width:100%;
+	height:5px;
+}
+#bluebar {
+	top:50px;
+}
+/*
+#mouseDetector {
+	width:100%;
+	height:10px;
+	position:fixed;
+	top:0px;
+	z-index:1;
+}
+*/
+#scoreContainer { 
+	height:29px; 
+	width:36px; 
+	z-index:5; 
+	background-repeat:no-repeat; 
+	float:left;
+	position:relative; 
+	right:26px; 
+	top:5px; 
+	opacity:0;
+	pointer-events: none;
+}
+
+#score{ 
+	position:relative;
+	text-align:center; 
+	width:50%; 
+	margin:0px auto; 
+	padding: 8px 0 0 0; 
+}
+
+
+/* progressBar
+******************************************************************/
+
+#progressBarTotalScore { position:relative; right:2px; }
+#progressBarBg { 
+	width:100%; 
+	background:#111; 
+	height:5px;
+	width:100%; 
+}
+
+#progressBar {
+	float:left; 
+	height:5px; 
+	background:#de1d28; 
+}
+
+#lvlup { 
+	height:30px; 
+	width:89px; 
+	z-index:20; 
+	top:-40px; 
+	margin:0 auto; 
+	position:relative; 
+}
+
+
+/* dropDown
+******************************************************************/
+
+#dropDown { 
+	width:100%; 
+	height:225px; 
+	position:relative; 
+	z-index:-1; 
+	overflow:hidden;
+	top:-255px; 
+	background:#333;
+}
+
+#buildingContainer {
+	position:relative;
+	height:200px;
+	overflow-x:auto;
+	overflow-y:hidden;
+	width:100%;
+}
+
+#buildings {
+	position:relative;
+	height:200px;
+	width:2000px;
+
+}
+.building {
+	position:relative;
+float:left;
+	height:170px;
+	width:200px;
+	background-size:200px 170px;
+}
+
+div.foo::-webkit-scrollbar {
+    width: 5px;
+	height: 10px;
+}
+ 
+div.foo::-webkit-scrollbar-track {
+   /* -webkit-box-shadow: inset 0 20px 6px rgba(0,255,0,0.7); */
+    -webkit-box-shadow: inset 0 20px 6px rgba(150,150,150,.7); 
+    border-radius: 1px;
+}
+ 
+div.foo::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    /*-webkit-box-shadow: inset 0px 20px 60px rgba(255,0,0,.75);*/ 
+    -webkit-box-shadow: inset 0px 20px 60px rgba(60,90,60,.7); 
+}
+
+
+#soundToggle {
+	width:20px;
+	height:20px;
+}
+
+#plusOneToggle {
+	width:20px;
+	height:20px;
+}
+
+#closeDropDown {
+	width:20px;
+	height:20px;
+}
+
+#closeDropDown img {
+	width:20px;
+	height:20px;
+	position:relative;
+	top:-200px;
+}
+
+
+
+/* dropDownInfoRow
+******************************************************************/
+
+#dropDownInfoRow { 
+	margin: 135px 0 0 5px; 
+	padding-top:3px;
+	text-align:left; 
+	font-size:11px; 
+	font-weight:normal; 
+	position:relative;
+	top:-165px;
+}
+#dropDownInfoRow #badges { margin:5px 0 0 0; }
+#dropDownInfoRow #badges img { padding:0 5px 0 0; width:35px; height:35px; vertical-align:-12px } 
+
+#dropDownInfoRow #stats { float:left; margin:10px 4px 0 4px; }
+#dropDownInfoRow #stats #statsLogo img { max-height:13px; margin:0 5px 0 0; }
+#dropDownInfoRow #stats #statsWordmark a { color:#fff }
+#dropDownInfoRow #stats .statsDivider { padding:0 5px 0 7px; width:2px; border-left:1px dotted #999 }
+
+#dropDownInfoRow #statsTotalScore,#dropDownInfoRow #statsRankNum { background:#de1d28 }
+.numberSpan { 
+	background:#111; 
+	padding:2px 4px; 
+	margin:0 15px 0 2px; 
+	font-size:88%; 
+	color:#fff; 
+	-moz-border-radius:2px; border-radius:2px; /* cross-browser rounded-corner */
+ 	zoom: 1; filter: alpha(opacity=70); opacity: 0.8;  cross-browser transparency */
+}
+
+#options { float:right; width:400px; }
+#options div {
+	float:right;
+	margin:11px 10px 0 0;
+	padding:2px 4px;
+	font-size:88%;
+	/*background:#111; 
+	-moz-border-radius:2px; border-radius:2px; */ /* cross-browser rounded-corner */
+}
+#options div a { color:#de1d28; }

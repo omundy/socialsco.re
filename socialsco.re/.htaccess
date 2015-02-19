@@ -1,0 +1,42 @@
+
+# Deny any .htaccess viewing
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+
+# Deny index listings
+Options -Indexes
+
+# Customized error messages.
+ErrorDocument 404 /index.php
+
+# Set the default handler.
+#DirectoryIndex index.php
+
+# Clean urls
+<IfModule mod_rewrite.c>
+
+	# Required with rewrite
+	Options +FollowSymlinks
+	
+	# Turn RewriteEngine on
+	RewriteEngine on
+	
+	# rewrite base
+	RewriteBase /
+	
+	# ignore all requests to /api
+	RewriteCond %{REQUEST_URI} !^api
+	RewriteCond %{REQUEST_URI} !^assets
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	
+	
+	RewriteRule ^([0-9a-zA-Z\_\-]+)/([a-zA-Z0-9\_\-]+)/([a-zA-Z0-9\_\-]+)/?$ index.php?page=$1&action=$2&var1=$3 [L,QSA]
+	RewriteRule ^([0-9a-zA-Z\_\-]+)/([a-zA-Z0-9\_\-]+)/?$ index.php?page=$1&action=$2 [L,QSA]
+	RewriteRule ^([0-9a-zA-Z\_\-]+)/?$ index.php?page=$1 [L,QSA]
+
+</IfModule>

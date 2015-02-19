@@ -1,0 +1,9 @@
+<?php if (!defined('DIRECT_ACCESS')) exit('No direct script access allowed');
+
+	# Define db connection details
+	$db_connect = array('host' => 'DATABASE_HOST',		// your database host
+						'user' => 'DATABASE_USER',		// database username
+						'pass' => 'DATABASE_PASS',		// database password
+						'name' => 'DATABASE_NAME');		// database name
+
+?>
